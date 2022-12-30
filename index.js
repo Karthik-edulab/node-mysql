@@ -18,3 +18,7 @@ connection.connect(function(err) {
     console.log('Connected to the MySQL server.');
   });
   
+
+  connection.query("select * from stu_details",(err,result)=>{
+    console.warn("result",result)
+  });
